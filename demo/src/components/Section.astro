@@ -1,0 +1,11 @@
+---
+import { Provider, getContext } from '../context/section.ts'
+
+const level = 1 + getContext()?.level || 1
+---
+
+<Provider level={level}>
+	<article {...Astro.props}>
+		<slot />
+	</article>
+</Provider>

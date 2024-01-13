@@ -1,0 +1,14 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+import { getContext } from '../context/section.ts'
+
+export interface Props extends HTMLAttributes<'h3'> {
+	level?: string
+}
+
+const { level = Number(getContext()?.level) || 1, ...props } = Astro.props
+---
+
+<h3 aria-level={level} {...props}>
+	<slot />
+</h3>

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"name": "@astropub/context",
+	"description": "Create and share context across Astro components",
+	"version": "0.1.0",
+	"type": "module",
+	"license": "MIT-0",
+	"exports": {
+		".": {
+			"default": "./context.js",
+			"types": "./context.d.ts"
+		},
+		"./context": {
+			"default": "./context.js",
+			"types": "./context.d.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "context.js",
+	"types": "context.d.ts",
+	"unpkg": "context.js",
+	"jsdelivr": "context.js",
+	"sideEffects": false,
+	"files": [
+		"context.js",
+		"context.d.ts"
+	],
+	"keywords": [
+		"astro",
+		"astro-component",
+		"withastro",
+		"ui",
+		"component",
+		"content",
+		"context",
+		"hook",
+		"html",
+		"object",
+		"provider",
+		"render",
+		"renderer",
+		"scope",
+		"scoped",
+		"share",
+		"shared",
+		"value"
+	],
+	"author": "Jonathan Neal <jonathantneal@hotmail.com>",
+	"bugs": "https://github.com/astro-community/context/issues",
+	"homepage": "https://github.com/astro-community/context",
+	"repository": "https://github.com/astro-community/context.git"
+}

@@ -1,0 +1,15 @@
+{
+	"name": "@astropub/context.demo",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"devDependencies": {
+		"@astropub/context": "0.1.0",
+		"astro": "4"
+	}
+}

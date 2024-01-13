@@ -1,0 +1,35 @@
+---
+import Section from '../components/Section.astro'
+import Heading from '../components/Heading.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Context</title>
+	</head>
+	<body>
+		<Section>
+			<Heading>Title</Heading>
+			<p>Hello, world.</p>
+			<Section>
+				<Heading>Heading</Heading>
+				<p>Hello, world.</p>
+				<Section>
+					<Heading>Sub-Heading</Heading>
+					<p>Hello, world.</p>
+					<Section>
+						<Heading>Sub-Sub-Heading</Heading>
+						<p>Hello, world.</p>
+
+						<Heading level="1">Top-level heading</Heading>
+						<p>Hello, world.</p>
+					</Section>
+				</Section>
+			</Section>
+		</Section>
+	</body>
+</html>
